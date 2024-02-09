@@ -7,6 +7,9 @@ import data_collection from "../Assets/data-collection.svg";
 import data_processing from "../Assets/data-processing.svg";
 import insight_generation from "../Assets/insight-generation.svg";
 import our_process_image from "../Assets/our-process.svg";
+import Team from './Team';
+import Soultion from './Soultion';
+import Approach from './Approach';
 
 const About = () => {
   return (
@@ -52,7 +55,7 @@ const About = () => {
 
         {/* Our business Intelligence */}
 
-        <div className="about-page-section-intelligence bg-black min-h-max pb-5">
+        <div className="about-page-section-intelligence bg-black min-h-max pb-20">
           <div className="about-page-intelligence-wrapper gap-2">
             <h2 className='intelligence-header'>Our  Business Intelligence Process Explained</h2>
             <p className='intelligence-para'>A step-by-step guide to our data driven  approach.</p>
@@ -90,29 +93,29 @@ const About = () => {
             </div>
             <div className="our-process-data-set-range">
               <div className="data-collection-card-intelligent-set">
-                <div className="data-collection-wrapper grid grid-cols-1 md:grid-cols-2">
+                <div className="data-collection-wrapper grid grid-cols-1 md:grid-cols-2 sm:flex">
                   <div className="data-process-card-intelligent">
                     <h5 className='our-process-header'>Consultation</h5>
                     <p className='our-process-para'>We assess your data needs</p>
                   </div>
 
                   <div className="data-process-card-intelligent">
-                    <h5 className='our-process-header'>Consultation</h5>
-                    <p className='our-process-para'>We assess your data needs</p>
+                    <h5 className='our-process-header'>Implementation</h5>
+                    <p className='our-process-para'>Deploy tailored solutions</p>
                   </div>
 
                   
                 </div>
 
-                <div className="data-collection-wrapper grid grid-cols-1 md:grid-cols-2">
+                <div className="data-collection-wrapper grid grid-cols-1 md:grid-cols-2 sm:flex">
                   <div className="data-process-card-intelligent">
-                    <h5 className='our-process-header'>Consultation</h5>
-                    <p className='our-process-para'>We assess your data needs</p>
+                    <h5 className='our-process-header'>Optimization</h5>
+                    <p className='our-process-para'>Enhance operational efficiency</p>
                   </div>
 
                   <div className="data-process-card-intelligent">
-                    <h5 className='our-process-header'>Consultation</h5>
-                    <p className='our-process-para'>We assess your data needs</p>
+                    <h5 className='our-process-header'>Support</h5>
+                    <p className='our-process-para'>Continual improvement and aid</p>
                   </div>
 
                   
@@ -121,6 +124,16 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        <Approach/>
+
+        <Soultion/>
+
+        <Team/>
+
+        
+
+        
       </div>
     </>
   )
